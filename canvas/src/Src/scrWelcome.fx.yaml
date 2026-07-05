@@ -1,0 +1,52 @@
+scrWelcome As screen:
+    Fill: =RGBA(244, 246, 248, 1)
+    recHeaderW As label:
+        Text: =""
+        Fill: =RGBA(16, 94, 122, 1)
+        X: =0
+        Y: =0
+        Width: =Parent.Width
+        Height: =260
+    lblAppName As label:
+        Text: ="HomeGuard"
+        Color: =RGBA(255, 255, 255, 1)
+        X: =30
+        Y: =90
+        Width: =Parent.Width - 60
+        Height: =50
+        Size: =30
+        FontWeight: =FontWeight.Bold
+    lblTagline As label:
+        Text: ="Report damp & mould in your home"
+        Color: =RGBA(214, 232, 240, 1)
+        X: =30
+        Y: =145
+        Width: =Parent.Width - 60
+        Height: =40
+        Size: =15
+    lblBody As label:
+        Text: ="If you have damp or mould, tell us and we'll act on it. Under Awaab's Law we investigate hazards quickly and keep you updated."
+        Color: =RGBA(60, 60, 60, 1)
+        X: =30
+        Y: =320
+        Width: =Parent.Width - 60
+        Height: =160
+        Size: =16
+    btnStart As button:
+        Text: ="Start a report"
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(16, 124, 86, 1)
+        HoverFill: =RGBA(13, 105, 73, 1)
+        PressedFill: =RGBA(11, 92, 64, 1)
+        BorderColor: =RGBA(16, 124, 86, 1)
+        Size: =17
+        FontWeight: =FontWeight.Semibold
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        X: =30
+        Y: =Parent.Height - 130
+        Width: =Parent.Width - 60
+        Height: =56
+        OnSelect: =Navigate(scrReport, ScreenTransition.Cover)

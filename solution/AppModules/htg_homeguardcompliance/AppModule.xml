@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>htg_homeguardcompliance</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="26" id="{6157fc42-c847-4590-874a-09b6c528f2e7}" />
+    <AppModuleComponent type="26" id="{48925584-bbcf-4034-ad0f-0c5994af8ad1}" />
+    <AppModuleComponent type="26" id="{6753d73f-e5cf-4481-b1e0-0dbe4aac81df}" />
+    <AppModuleComponent type="26" id="{d1f1f2a5-9f7c-407e-9fde-1740f02f1822}" />
+    <AppModuleComponent type="26" id="{9f37d912-8e2e-4aed-b9d1-1ef695a28a04}" />
+    <AppModuleComponent type="26" id="{a6959612-2030-420e-b21b-5d02cf285e4b}" />
+    <AppModuleComponent type="26" id="{dce0b6ef-6e01-4427-9e9a-74e11f2421e3}" />
+    <AppModuleComponent type="26" id="{8e4453f4-8d10-472e-989c-76e7c9627d51}" />
+    <AppModuleComponent type="26" id="{f3acb3f5-29c8-4b9c-a9ed-cbcf3c52f781}" />
+    <AppModuleComponent type="26" id="{ee9ee688-c311-42da-9538-edbf9f95d9c1}" />
+    <AppModuleComponent type="60" id="{bf37aaae-cf2a-4022-9386-2243313192f4}" />
+    <AppModuleComponent type="60" id="{e0883236-798f-4133-9169-59208ce316c7}" />
+    <AppModuleComponent type="60" id="{2184cc51-87a1-4ba7-ad77-88ebda6ccbc7}" />
+    <AppModuleComponent type="60" id="{444ed3b8-f4fd-48b7-9471-a40794418079}" />
+    <AppModuleComponent type="60" id="{c467e954-9de0-4cc5-97c1-d0d928cc3b0f}" />
+    <AppModuleComponent type="62" schemaName="htg_homeguardsitemap" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="HomeGuard Compliance" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Housing officer app for managing damp &amp; mould hazards and Awaab's Law compliance." languagecode="1033" />
+  </Descriptions>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

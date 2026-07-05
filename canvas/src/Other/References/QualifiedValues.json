@@ -1,0 +1,25 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_hg_hazardcase_forms",
+      "Namespace": "Hazard Cases (Forms)",
+      "Values": {
+        "Information": "c467e954-9de0-4cc5-97c1-d0d928cc3b0f"
+      }
+    },
+    {
+      "Kind": "default.cds_hg_property_forms",
+      "Namespace": "Properties (Forms)",
+      "Values": {
+        "Information": "c877cd2b-92f6-46b9-bd37-d94cec84424c"
+      }
+    },
+    {
+      "Kind": "default.cds_hg_resident_forms",
+      "Namespace": "Residents (Forms)",
+      "Values": {
+        "Information": "c3bc9c09-8205-4eae-a2c0-aacc5e7659c6"
+      }
+    }
+  ]
+}

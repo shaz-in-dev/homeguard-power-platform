@@ -1,0 +1,156 @@
+Screen1 As screen:
+    Fill: =RGBA(244, 246, 248, 1)
+    recHeader As label:
+        Text: =""
+        Fill: =RGBA(16, 94, 122, 1)
+        X: =0
+        Y: =0
+        Width: =Parent.Width
+        Height: =84
+        ZIndex: =10
+    lblTitle As label:
+        Text: ="HomeGuard  —  Case Management"
+        Color: =RGBA(255, 255, 255, 1)
+        X: =30
+        Y: =22
+        Width: =600
+        Height: =40
+        Size: =22
+        FontWeight: =FontWeight.Semibold
+        ZIndex: =11
+    lblCount As label:
+        Text: =CountRows(Gallery1.AllItems) & " cases shown"
+        Color: =RGBA(214, 232, 240, 1)
+        X: =Parent.Width - 260
+        Y: =30
+        Width: =230
+        Height: =28
+        Size: =14
+        Align: =Align.Right
+        ZIndex: =11
+    txtSearch As text:
+        HintText: ="Search reference or description"
+        Fill: =RGBA(255, 255, 255, 1)
+        X: =30
+        Y: =104
+        Width: =420
+        Height: =44
+        ZIndex: =11
+    drpFilter As dropdown:
+        Items: =["All", "Breached", "At Risk", "On Track"]
+        Default: ="All"
+        Fill: =RGBA(255, 255, 255, 1)
+        X: =466
+        Y: =104
+        Width: =240
+        Height: =44
+        ZIndex: =11
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =96
+        X: =30
+        Y: =168
+        Width: =Parent.Width - 60
+        Height: =Parent.Height - 192
+        ZIndex: =1
+        Items: |
+            =Sort(
+                Filter(
+                    'Hazard Cases',
+                    (IsBlank(txtSearch.Text) || txtSearch.Text in 'Case Reference' || txtSearch.Text in Description)
+                    && (
+                        drpFilter.Selected.Value = "All"
+                        || (drpFilter.Selected.Value = "Breached" && 'SLA Status' = 'SLA Status (Hazard Cases)'.Breached)
+                        || (drpFilter.Selected.Value = "At Risk" && 'SLA Status' = 'SLA Status (Hazard Cases)'.'At Risk')
+                        || (drpFilter.Selected.Value = "On Track" && 'SLA Status' = 'SLA Status (Hazard Cases)'.'On Track')
+                    )
+                ),
+                'Reported Date',
+                SortOrder.Descending
+            )
+        OnSelect: =Set(varCase, Gallery1.Selected); Navigate(scrCaseDetail, ScreenTransition.Cover)
+        recBar As rectangle:
+            Fill: =Switch(true, ThisItem.'SLA Status' = 'SLA Status (Hazard Cases)'.Breached, RGBA(200, 32, 32, 1), ThisItem.'SLA Status' = 'SLA Status (Hazard Cases)'.'At Risk', RGBA(214, 158, 46, 1), RGBA(16, 124, 86, 1))
+            OnSelect: =Select(Parent)
+            X: =0
+            Y: =6
+            Width: =6
+            Height: =Parent.TemplateHeight - 14
+            ZIndex: =1
+        lblRef As label:
+            Text: =ThisItem.'Case Reference'
+            Color: =RGBA(32, 32, 32, 1)
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            OnSelect: =Select(Parent)
+            X: =28
+            Y: =14
+            Width: =360
+            Height: =28
+            ZIndex: =2
+        lblSub As label:
+            Text: =ThisItem.'Hazard Type' & "   •   reported " & Text(ThisItem.'Reported Date', "dd mmm yyyy")
+            Color: =RGBA(96, 96, 96, 1)
+            Size: =12
+            OnSelect: =Select(Parent)
+            X: =28
+            Y: =46
+            Width: =460
+            Height: =24
+            ZIndex: =3
+        lblSeverity As label:
+            Text: =ThisItem.Severity
+            Color: =If(ThisItem.Severity = 'Severity (Hazard Cases)'.'Emergency (24hr)', RGBA(200, 32, 32, 1), RGBA(70, 70, 70, 1))
+            FontWeight: =If(ThisItem.Severity = 'Severity (Hazard Cases)'.'Emergency (24hr)', FontWeight.Semibold, FontWeight.Normal)
+            Size: =12
+            Align: =Align.Center
+            OnSelect: =Select(Parent)
+            X: =Parent.TemplateWidth - 560
+            Y: =34
+            Width: =170
+            Height: =28
+            ZIndex: =4
+        lblStatus As label:
+            Text: =ThisItem.'Status (hg_status)'
+            Color: =RGBA(70, 70, 70, 1)
+            Size: =12
+            Align: =Align.Center
+            OnSelect: =Select(Parent)
+            X: =Parent.TemplateWidth - 380
+            Y: =34
+            Width: =190
+            Height: =28
+            ZIndex: =5
+        lblSlaChip As label:
+            Text: =ThisItem.'SLA Status'
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =Switch(true, ThisItem.'SLA Status' = 'SLA Status (Hazard Cases)'.Breached, RGBA(200, 32, 32, 1), ThisItem.'SLA Status' = 'SLA Status (Hazard Cases)'.'At Risk', RGBA(214, 158, 46, 1), RGBA(16, 124, 86, 1))
+            Size: =11
+            FontWeight: =FontWeight.Semibold
+            Align: =Align.Center
+            OnSelect: =Select(Parent)
+            X: =Parent.TemplateWidth - 180
+            Y: =34
+            Width: =120
+            Height: =28
+            ZIndex: =6
+        NextArrow1 As icon.ChevronRight:
+            Color: =RGBA(160, 160, 160, 1)
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            Width: =40
+            Height: =40
+            X: =Parent.TemplateWidth - 48
+            Y: =(Parent.TemplateHeight / 2) - 20
+            ZIndex: =7
+        Separator1 As rectangle:
+            Fill: =RGBA(230, 233, 236, 1)
+            OnSelect: =Select(Parent)
+            X: =0
+            Y: =Parent.TemplateHeight - 2
+            Width: =Parent.TemplateWidth
+            Height: =2
+            ZIndex: =8

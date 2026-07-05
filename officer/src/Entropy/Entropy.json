@@ -1,0 +1,99 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Gallery1": 5,
+    "galleryTemplate1": 6,
+    "Host": 3,
+    "Image1": 7,
+    "NextArrow1": 10,
+    "Rectangle1": 12,
+    "Screen1": 4,
+    "Separator1": 11,
+    "Subtitle1": 9,
+    "Title1": 8
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "07/04/2026 12:53:30",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 18,
+    "Hazard Cases": 15,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_hazardtype": 0,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_severity": 1,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_slastatus": 2,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_status": 3,
+    "Hazard Cases\\default.cds_hg_hazardcase_views": 12,
+    "Hazard Cases\\hg_hazardcase_statecode": 4,
+    "Hazard Cases\\hg_hazardcase_statuscode": 5,
+    "Properties": 16,
+    "Properties\\cr86e_hg_property_hg_propertytype": 6,
+    "Properties\\default.cds_hg_property_views": 13,
+    "Properties\\hg_property_statecode": 7,
+    "Properties\\hg_property_statuscode": 8,
+    "Residents": 17,
+    "Residents\\cr86e_hg_resident_hg_isvulnerable": 9,
+    "Residents\\default.cds_hg_resident_views": 14,
+    "Residents\\hg_resident_statecode": 10,
+    "Residents\\hg_resident_statuscode": 11
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "gallery": 0,
+    "icon": 3,
+    "image": 2,
+    "label": 4,
+    "rectangle": 1
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Gallery1": {},
+    "galleryTemplate1": {},
+    "Host": {},
+    "Image1": {},
+    "NextArrow1": {},
+    "Rectangle1": {},
+    "Screen1": {},
+    "Separator1": {},
+    "Subtitle1": {},
+    "Title1": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Gallery1": 0,
+    "galleryTemplate1": 1,
+    "Host": 0,
+    "Image1": 3,
+    "NextArrow1": 4,
+    "Rectangle1": 2,
+    "Screen1": 0,
+    "Separator1": 7,
+    "Subtitle1": 6,
+    "Title1": 5
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1073168,
+    "ControlCount": {
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.67544420000000005
+  },
+  "WasLocalDatabaseReferencesEmpty": false
+}

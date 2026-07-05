@@ -1,0 +1,84 @@
+<section class="hg-hero">
+  <div class="hg-container">
+    <span class="hg-eyebrow">Together Housing · Awaab's Law</span>
+    <h1 class="hg-hero-title">Damp or mould in your home? Tell us.</h1>
+    <p class="hg-hero-sub">Report it in two minutes. By law we investigate hazards within 14 days &mdash; within 24 hours if it's an emergency &mdash; and keep you updated every step of the way.</p>
+    <a href="#report" class="hg-btn hg-btn-primary">Report a hazard</a>
+  </div>
+</section>
+
+<section class="hg-section">
+  <div class="hg-container">
+    <h2 class="hg-h2">What happens after you report</h2>
+    <p class="hg-lead">Awaab's Law sets legal timescales we must meet. Here's what you can expect.</p>
+    <div class="hg-cards">
+      <div class="hg-card">
+        <div class="hg-card-num">24 hrs</div>
+        <h3>Emergency hazards</h3>
+        <p>If the hazard is a serious and immediate risk to health, we make it safe within 24 hours.</p>
+      </div>
+      <div class="hg-card">
+        <div class="hg-card-num">14 days</div>
+        <h3>Investigation</h3>
+        <p>We investigate the damp or mould and give you a written summary of what we found.</p>
+      </div>
+      <div class="hg-card">
+        <div class="hg-card-num">7 days</div>
+        <h3>Repairs begin</h3>
+        <p>Once investigated, we begin the repair work needed to put things right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="report" class="hg-section hg-section-alt">
+  <div class="hg-container hg-narrow">
+    <h2 class="hg-h2">Report a hazard</h2>
+    <p class="hg-lead">Fill this in and we'll be in touch. Fields marked <span class="hg-req">*</span> are required.</p>
+
+    <form id="hg-form" class="hg-form" novalidate>
+      <div class="hg-field">
+        <label for="f-name">Your name <span class="hg-req">*</span></label>
+        <input type="text" id="f-name" required placeholder="e.g. Aisha Bello" />
+      </div>
+      <div class="hg-row">
+        <div class="hg-field">
+          <label for="f-contact">Contact number <span class="hg-req">*</span></label>
+          <input type="tel" id="f-contact" required placeholder="e.g. 07700 900111" />
+        </div>
+        <div class="hg-field">
+          <label for="f-email">Email <span class="hg-muted">(optional)</span></label>
+          <input type="email" id="f-email" placeholder="e.g. aisha@example.com" />
+        </div>
+      </div>
+      <div class="hg-field">
+        <label for="f-address">Your address <span class="hg-req">*</span></label>
+        <input type="text" id="f-address" required placeholder="House/flat, street and postcode" />
+      </div>
+      <div class="hg-field">
+        <label for="f-type">Type of problem <span class="hg-req">*</span></label>
+        <select id="f-type" required>
+          <option value="">Please choose&hellip;</option>
+          <option value="1">Damp</option>
+          <option value="2">Mould</option>
+          <option value="3">Damp &amp; Mould</option>
+          <option value="4">Condensation</option>
+          <option value="5">Structural</option>
+        </select>
+      </div>
+      <div class="hg-field">
+        <label for="f-desc">Describe the problem <span class="hg-req">*</span></label>
+        <textarea id="f-desc" rows="4" required placeholder="e.g. black mould on the bedroom ceiling by the window"></textarea>
+      </div>
+      <p id="hg-error" class="hg-alert hg-alert-error" hidden></p>
+      <button type="submit" id="hg-submit" class="hg-btn hg-btn-primary hg-btn-block">Submit report</button>
+    </form>
+
+    <div id="hg-success" class="hg-success" hidden>
+      <div class="hg-tick">&#10003;</div>
+      <h3>Thank you &mdash; your report is logged</h3>
+      <p>Your reference is <strong id="hg-ref"></strong>. A housing officer will review it. Emergency hazards are actioned within 24 hours; all others are investigated within 14 days under Awaab's Law.</p>
+      <button type="button" id="hg-again" class="hg-btn hg-btn-ghost">Report another</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>htg_homeguardsitemap</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap>
+    <Area Id="hg_area" Title="HomeGuard" ShowGroups="true">
+      <Group Id="hg_grp_cases" Title="Compliance">
+        <SubArea Id="hg_sa_case" Entity="hg_hazardcase" Title="Hazard Cases" />
+        <SubArea Id="hg_sa_insp" Entity="hg_inspection" Title="Inspections" />
+        <SubArea Id="hg_sa_job" Entity="hg_repairjob" Title="Repair Jobs" />
+      </Group>
+      <Group Id="hg_grp_ref" Title="Housing">
+        <SubArea Id="hg_sa_prop" Entity="hg_property" Title="Properties" />
+        <SubArea Id="hg_sa_res" Entity="hg_resident" Title="Residents" />
+      </Group>
+    </Area>
+  </SiteMap>
+</AppModuleSiteMap>

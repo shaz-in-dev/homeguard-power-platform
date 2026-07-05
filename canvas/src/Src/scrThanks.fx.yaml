@@ -1,0 +1,91 @@
+scrThanks As screen:
+    Fill: =RGBA(244, 246, 248, 1)
+    recHeaderT As label:
+        Text: =""
+        Fill: =RGBA(16, 94, 122, 1)
+        X: =0
+        Y: =0
+        Width: =Parent.Width
+        Height: =110
+    lblThanksTitle As label:
+        Text: ="Thank you"
+        Color: =RGBA(255, 255, 255, 1)
+        X: =30
+        Y: =40
+        Width: =Parent.Width - 60
+        Height: =45
+        Size: =22
+        FontWeight: =FontWeight.Semibold
+    lblCheck As label:
+        Text: ="✓"
+        Color: =RGBA(16, 124, 86, 1)
+        X: =0
+        Y: =160
+        Width: =Parent.Width
+        Height: =90
+        Size: =60
+        Align: =Align.Center
+    lblThanksBody As label:
+        Text: ="Your report has been logged and a housing officer will review it shortly."
+        Color: =RGBA(60, 60, 60, 1)
+        X: =40
+        Y: =260
+        Width: =Parent.Width - 80
+        Height: =70
+        Size: =15
+        Align: =Align.Center
+    recRefCard As label:
+        Text: =""
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(220, 226, 230, 1)
+        BorderThickness: =1
+        X: =40
+        Y: =350
+        Width: =Parent.Width - 80
+        Height: =110
+    lblRefCaption As label:
+        Text: ="YOUR REFERENCE"
+        Color: =RGBA(120, 120, 120, 1)
+        X: =40
+        Y: =368
+        Width: =Parent.Width - 80
+        Height: =24
+        Size: =11
+        Align: =Align.Center
+    lblRefValue As label:
+        Text: =varCase.'Case Reference'
+        Color: =RGBA(16, 94, 122, 1)
+        X: =40
+        Y: =392
+        Width: =Parent.Width - 80
+        Height: =50
+        Size: =24
+        FontWeight: =FontWeight.Bold
+        Align: =Align.Center
+    lblSla As label:
+        Text: ="Emergency hazards are actioned within 24 hours; all others are investigated within 14 days under Awaab's Law."
+        Color: =RGBA(110, 110, 110, 1)
+        X: =40
+        Y: =485
+        Width: =Parent.Width - 80
+        Height: =90
+        Size: =12
+        Align: =Align.Center
+    btnDone As button:
+        Text: ="Done"
+        Color: =RGBA(16, 94, 122, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(240, 244, 246, 1)
+        BorderColor: =RGBA(16, 94, 122, 1)
+        BorderThickness: =1
+        Size: =17
+        FontWeight: =FontWeight.Semibold
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        X: =40
+        Y: =Parent.Height - 130
+        Width: =Parent.Width - 80
+        Height: =56
+        OnSelect: =Navigate(scrWelcome, ScreenTransition.UnCover)

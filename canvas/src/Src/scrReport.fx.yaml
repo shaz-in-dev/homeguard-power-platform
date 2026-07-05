@@ -1,0 +1,204 @@
+scrReport As screen:
+    Fill: =RGBA(244, 246, 248, 1)
+    OnVisible: =Set(varShowErrors, false)
+    recHeaderR As label:
+        Text: =""
+        Fill: =RGBA(16, 94, 122, 1)
+        X: =0
+        Y: =0
+        Width: =Parent.Width
+        Height: =100
+    lblReportTitle As label:
+        Text: ="Report a hazard"
+        Color: =RGBA(255, 255, 255, 1)
+        X: =30
+        Y: =35
+        Width: =Parent.Width - 60
+        Height: =42
+        Size: =22
+        FontWeight: =FontWeight.Semibold
+    lblName As label:
+        Text: ="Your name *"
+        Color: =RGBA(70, 70, 70, 1)
+        X: =30
+        Y: =112
+        Width: =Parent.Width - 60
+        Height: =22
+        Size: =12
+        FontWeight: =FontWeight.Semibold
+    txtName As text:
+        HintText: ="e.g. Aisha Bello"
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =If(varShowErrors && IsBlank(txtName.Text), RGBA(200, 32, 32, 1), RGBA(220, 226, 230, 1))
+        BorderThickness: =If(varShowErrors && IsBlank(txtName.Text), 2, 1)
+        X: =30
+        Y: =134
+        Width: =Parent.Width - 60
+        Height: =42
+    lblContact As label:
+        Text: ="Contact number *"
+        Color: =RGBA(70, 70, 70, 1)
+        X: =30
+        Y: =184
+        Width: =Parent.Width - 60
+        Height: =22
+        Size: =12
+        FontWeight: =FontWeight.Semibold
+    txtContact As text:
+        HintText: ="e.g. 07700 900111"
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =If(varShowErrors && !IsMatch(txtContact.Text, "^\+?[\d\s\(\)\-]{10,}$"), RGBA(200, 32, 32, 1), RGBA(220, 226, 230, 1))
+        BorderThickness: =If(varShowErrors && !IsMatch(txtContact.Text, "^\+?[\d\s\(\)\-]{10,}$"), 2, 1)
+        X: =30
+        Y: =206
+        Width: =Parent.Width - 60
+        Height: =42
+    lblEmail As label:
+        Text: ="Email (optional)"
+        Color: =RGBA(70, 70, 70, 1)
+        X: =30
+        Y: =256
+        Width: =Parent.Width - 60
+        Height: =22
+        Size: =12
+        FontWeight: =FontWeight.Semibold
+    txtEmail As text:
+        HintText: ="e.g. aisha@example.com"
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =If(varShowErrors && !IsBlank(txtEmail.Text) && !IsMatch(txtEmail.Text, Match.Email), RGBA(200, 32, 32, 1), RGBA(220, 226, 230, 1))
+        BorderThickness: =If(varShowErrors && !IsBlank(txtEmail.Text) && !IsMatch(txtEmail.Text, Match.Email), 2, 1)
+        X: =30
+        Y: =278
+        Width: =Parent.Width - 60
+        Height: =42
+    lblAddress As label:
+        Text: ="Your address *"
+        Color: =RGBA(70, 70, 70, 1)
+        X: =30
+        Y: =328
+        Width: =Parent.Width - 60
+        Height: =22
+        Size: =12
+        FontWeight: =FontWeight.Semibold
+    txtAddress As text:
+        HintText: ="House/flat, street and postcode"
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =If(varShowErrors && IsBlank(txtAddress.Text), RGBA(200, 32, 32, 1), RGBA(220, 226, 230, 1))
+        BorderThickness: =If(varShowErrors && IsBlank(txtAddress.Text), 2, 1)
+        X: =30
+        Y: =350
+        Width: =Parent.Width - 60
+        Height: =42
+    lblType As label:
+        Text: ="Type of problem *"
+        Color: =RGBA(70, 70, 70, 1)
+        X: =30
+        Y: =400
+        Width: =Parent.Width - 60
+        Height: =22
+        Size: =12
+        FontWeight: =FontWeight.Semibold
+    drpType As dropdown:
+        Items: =['Hazard Type (Hazard Cases)'.Damp, 'Hazard Type (Hazard Cases)'.Mould, 'Hazard Type (Hazard Cases)'.'Damp & Mould', 'Hazard Type (Hazard Cases)'.Condensation, 'Hazard Type (Hazard Cases)'.Structural]
+        Fill: =RGBA(255, 255, 255, 1)
+        X: =30
+        Y: =422
+        Width: =Parent.Width - 60
+        Height: =42
+    lblDesc As label:
+        Text: ="Describe the problem *"
+        Color: =RGBA(70, 70, 70, 1)
+        X: =30
+        Y: =472
+        Width: =Parent.Width - 60
+        Height: =22
+        Size: =12
+        FontWeight: =FontWeight.Semibold
+    txtDesc As text:
+        Mode: =TextMode.MultiLine
+        HintText: ="e.g. black mould on the bedroom ceiling"
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =If(varShowErrors && IsBlank(txtDesc.Text), RGBA(200, 32, 32, 1), RGBA(220, 226, 230, 1))
+        BorderThickness: =If(varShowErrors && IsBlank(txtDesc.Text), 2, 1)
+        X: =30
+        Y: =494
+        Width: =Parent.Width - 60
+        Height: =80
+    lblErr As label:
+        Text: ="Please complete all fields marked * with a valid phone number (and a valid email if given)."
+        Color: =RGBA(200, 32, 32, 1)
+        Visible: =varShowErrors
+        X: =30
+        Y: =636
+        Width: =Parent.Width - 60
+        Height: =40
+        Size: =11
+    btnSubmit As button:
+        Text: ="Submit report"
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(16, 124, 86, 1)
+        HoverFill: =RGBA(13, 105, 73, 1)
+        PressedFill: =RGBA(11, 92, 64, 1)
+        BorderColor: =RGBA(16, 124, 86, 1)
+        Size: =17
+        FontWeight: =FontWeight.Semibold
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        X: =30
+        Y: =582
+        Width: =Parent.Width - 60
+        Height: =50
+        OnSelect: |
+            =If(
+                !IsBlank(txtName.Text) && !IsBlank(txtAddress.Text) && !IsBlank(txtDesc.Text) && !IsBlank(drpType.Selected)
+                  && IsMatch(txtContact.Text, "^\+?[\d\s\(\)\-]{10,}$")
+                  && (IsBlank(txtEmail.Text) || IsMatch(txtEmail.Text, Match.Email)),
+                Set(
+                    varProp,
+                    Patch(
+                        Properties,
+                        Defaults(Properties),
+                        {
+                            'Property Reference': "SR-" & Text(Now(), "yymmddhhmmss"),
+                            'Address Line 1': txtAddress.Text
+                        }
+                    )
+                );
+                Set(
+                    varRes,
+                    Patch(
+                        Residents,
+                        Defaults(Residents),
+                        {
+                            'Full Name': txtName.Text,
+                            'Contact Number': txtContact.Text,
+                            Email: txtEmail.Text,
+                            Property: varProp
+                        }
+                    )
+                );
+                Set(
+                    varCase,
+                    Patch(
+                        'Hazard Cases',
+                        Defaults('Hazard Cases'),
+                        {
+                            'Case Reference': "HZ-" & Text(Now(), "yymmddhhmmss"),
+                            'Hazard Type': drpType.Selected.Value,
+                            Property: varProp,
+                            Resident: varRes,
+                            Description: txtDesc.Text,
+                            'Reported Date': Now(),
+                            'Status (hg_status)': 'Status (Hazard Cases)'.New,
+                            'SLA Status': 'SLA Status (Hazard Cases)'.'On Track'
+                        }
+                    )
+                );
+                Set(varShowErrors, false);
+                Reset(txtName); Reset(txtContact); Reset(txtEmail); Reset(txtAddress); Reset(txtDesc); Reset(drpType);
+                Navigate(scrThanks, ScreenTransition.Fade),
+                Set(varShowErrors, true);
+                Notify("Please complete all required fields correctly.", NotificationType.Error)
+            )

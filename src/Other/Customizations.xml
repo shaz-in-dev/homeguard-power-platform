@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Property" OriginalName="Property">hg_property</Name>
+      <EntityInfo>
+        <entity Name="hg_property">
+          <LocalizedNames>
+            <LocalizedName description="Property" languagecode="1033" />
+          </LocalizedNames>
+          <LocalizedCollectionNames>
+            <LocalizedCollectionName description="Properties" languagecode="1033" />
+          </LocalizedCollectionNames>
+          <Descriptions>
+            <Description description="A social housing property managed by the landlord." languagecode="1033" />
+          </Descriptions>
+          <attributes>
+            <attribute PhysicalName="hg_propertyId">
+              <Type>primarykey</Type>
+              <Name>hg_propertyId</Name>
+              <LogicalName>hg_propertyid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>0</IsCustomizable>
+              <IsRenameable>0</IsRenameable>
+              <IsPrimaryKey>1</IsPrimaryKey>
+              <displaynames>
+                <displayname description="Property" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for Property instances" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="hg_name">
+              <Type>nvarchar</Type>
+              <Name>hg_name</Name>
+              <LogicalName>hg_name</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <IsPrimaryField>1</IsPrimaryField>
+              <MaxLength>200</MaxLength>
+              <Length>400</Length>
+              <Format>text</Format>
+              <displaynames>
+                <displayname description="Property Reference" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique property reference (e.g. UPRN)." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+          <EntitySetName>hg_properties</EntitySetName>
+          <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
+          <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+          <IsRenameable>1</IsRenameable>
+          <IsCustomizable>1</IsCustomizable>
+          <IsMappable>1</IsMappable>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsActivity>0</IsActivity>
+          <IsAvailableOffline>0</IsAvailableOffline>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <HasRelatedNotes>0</HasRelatedNotes>
+          <HasRelatedActivities>0</HasRelatedActivities>
+        </entity>
+      </EntityInfo>
+    </Entity>
+  </Entities>
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <SolutionPluginAssemblies />
+  <EntityDataProviders />
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

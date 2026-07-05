@@ -1,0 +1,62 @@
+:root{
+  --hg-teal:#0f5e7a; --hg-teal-dk:#0b4459; --hg-green:#107c56; --hg-green-dk:#0d6948;
+  --hg-ink:#14262e; --hg-muted:#5c6f77; --hg-bg:#f4f8f9; --hg-line:#dce6e9; --hg-red:#c23a28;
+}
+.hg-container{max-width:1080px;margin:0 auto;padding:0 24px;}
+.hg-narrow{max-width:680px;}
+
+/* hero */
+.hg-hero{background:linear-gradient(135deg,#0f5e7a 0%,#0b4459 100%);color:#fff;padding:88px 0 96px;text-align:center;}
+.hg-eyebrow{display:inline-block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#bfe0ec;font-weight:600;margin-bottom:18px;}
+.hg-hero-title{font-size:clamp(30px,5vw,52px);line-height:1.08;font-weight:800;margin:0 0 18px;letter-spacing:-.02em;}
+.hg-hero-sub{font-size:clamp(16px,2vw,20px);line-height:1.55;color:#dbeaf0;max-width:620px;margin:0 auto 30px;}
+
+/* buttons */
+.hg-btn{display:inline-block;border:none;border-radius:12px;padding:15px 30px;font-size:17px;font-weight:700;
+  cursor:pointer;text-decoration:none;transition:transform .08s ease,background .15s ease;line-height:1;}
+.hg-btn:hover{text-decoration:none;transform:translateY(-1px);}
+.hg-btn-primary{background:var(--hg-green);color:#fff !important;}
+.hg-btn-primary:hover{background:var(--hg-green-dk);color:#fff !important;}
+.hg-btn-block{width:100%;padding:17px;font-size:18px;margin-top:8px;}
+.hg-btn-ghost{background:transparent;color:var(--hg-teal) !important;border:1.5px solid var(--hg-teal);}
+.hg-btn-ghost:hover{background:var(--hg-teal);color:#fff !important;}
+
+/* sections */
+.hg-section{padding:66px 0;background:#fff;}
+.hg-section-alt{background:var(--hg-bg);border-top:1px solid var(--hg-line);}
+.hg-h2{font-size:clamp(24px,3vw,34px);font-weight:800;color:var(--hg-ink);letter-spacing:-.02em;margin:0 0 8px;text-align:center;}
+.hg-lead{font-size:17px;color:var(--hg-muted);text-align:center;max-width:60ch;margin:0 auto 38px;}
+
+/* cards */
+.hg-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
+.hg-card{background:#fff;border:1px solid var(--hg-line);border-radius:16px;padding:28px 26px;
+  box-shadow:0 1px 2px rgba(20,38,46,.05),0 10px 26px rgba(20,38,46,.05);}
+.hg-card-num{font-size:34px;font-weight:800;color:var(--hg-teal);letter-spacing:-.02em;margin-bottom:8px;}
+.hg-card h3{font-size:19px;font-weight:700;color:var(--hg-ink);margin:0 0 8px;}
+.hg-card p{font-size:15px;color:var(--hg-muted);line-height:1.55;margin:0;}
+
+/* form */
+.hg-form{background:#fff;border:1px solid var(--hg-line);border-radius:18px;padding:30px;
+  box-shadow:0 1px 2px rgba(20,38,46,.05),0 12px 30px rgba(20,38,46,.06);}
+.hg-field{display:flex;flex-direction:column;margin-bottom:18px;}
+.hg-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:560px){.hg-row{grid-template-columns:1fr;}}
+.hg-field label{font-size:14px;font-weight:600;color:var(--hg-ink);margin-bottom:7px;}
+.hg-field input,.hg-field select,.hg-field textarea{font-size:16px;color:var(--hg-ink);background:#fff;
+  border:1.5px solid var(--hg-line);border-radius:10px;padding:12px 14px;font-family:inherit;transition:border-color .15s ease;}
+.hg-field input:focus,.hg-field select:focus,.hg-field textarea:focus{outline:none;border-color:var(--hg-teal);
+  box-shadow:0 0 0 3px rgba(15,94,122,.14);}
+.hg-field input.hg-invalid,.hg-field select.hg-invalid,.hg-field textarea.hg-invalid{border-color:var(--hg-red);}
+.hg-req{color:var(--hg-red);}
+.hg-muted{color:var(--hg-muted);font-weight:400;}
+.hg-alert{border-radius:10px;padding:12px 14px;font-size:14px;margin:0 0 8px;}
+.hg-alert-error{background:#fbe9e6;color:#8f2417;border:1px solid #f2c4bc;}
+
+/* success */
+.hg-success{background:#fff;border:1px solid var(--hg-line);border-radius:18px;padding:40px 30px;text-align:center;
+  box-shadow:0 12px 30px rgba(20,38,46,.06);}
+.hg-tick{width:66px;height:66px;border-radius:50%;background:#e3f3ec;color:var(--hg-green);font-size:34px;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+.hg-success h3{font-size:23px;font-weight:800;color:var(--hg-ink);margin:0 0 10px;}
+.hg-success p{font-size:16px;color:var(--hg-muted);line-height:1.6;max-width:46ch;margin:0 auto 22px;}
+.hg-success strong{color:var(--hg-teal);font-size:19px;}

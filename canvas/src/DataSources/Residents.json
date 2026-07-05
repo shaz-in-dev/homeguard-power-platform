@@ -1,0 +1,122 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hg_residents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hg_resident",
+    "Name": "Residents",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hg_contactnumber": "Contact Number",
+      "hg_email": "Email",
+      "hg_isvulnerable": "Vulnerable Resident",
+      "hg_name": "Full Name",
+      "hg_PropertyId": "Property",
+      "hg_resident_Annotations": "Notes",
+      "hg_resident_AsyncOperations": "System Jobs",
+      "hg_resident_BulkDeleteFailures": "Bulk Delete Failures",
+      "hg_resident_hazardcase": "Hazard Cases",
+      "hg_resident_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hg_resident_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hg_resident_ProcessSession": "Process Sessions",
+      "hg_resident_SyncErrors": "Sync Errors",
+      "hg_residentid": "Resident",
+      "hg_vulnerabilitydetails": "Vulnerability Details",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Residents",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Residents (Views)",
+    "Name": "_hg_resident_views",
+    "RelatedEntityName": "Residents",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "8074b031-e059-4e2f-99bb-014d8648fd4d": "Resident Advanced Find View",
+      "9f37d912-8e2e-4aed-b9d1-1ef695a28a04": "Inactive Residents",
+      "e3ee3700-8a41-435f-8938-60a65b2f9ff2": "Resident Lookup View",
+      "ee9ee688-c311-42da-9538-edbf9f95d9c1": "Active Residents",
+      "f1038aa8-53a5-48b8-8099-03684adfee92": "Resident Associated View"
+    }
+  },
+  {
+    "DisplayName": "Vulnerable Resident (Residents)",
+    "Name": "cr86e_hg_resident_hg_isvulnerable",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hg_isvulnerable",
+        "OptionSetReferenceEntityName": "Residents"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "hg_isvulnerable",
+    "RelatedEntityName": "Residents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Residents)",
+    "Name": "hg_resident_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Residents"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Residents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Residents)",
+    "Name": "hg_resident_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Residents"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Residents",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0ab93856-aad4-46b8-a4fb-6a9d0f59f645}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hg_name" select="1" icon="1" preview="1">
+        <row name="result" id="hg_repairjobid">
+          <cell name="hg_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="hg_repairjob">
+          <attribute name="hg_repairjobid" />
+          <attribute name="hg_name" />
+          <attribute name="createdon" />
+          <order attribute="hg_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="hg_name" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Repair Jobs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

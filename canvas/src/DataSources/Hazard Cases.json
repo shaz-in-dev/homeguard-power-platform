@@ -1,0 +1,200 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hg_hazardcases",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hg_hazardcase",
+    "Name": "Hazard Cases",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hg_description": "Description",
+      "hg_hazardcase_Annotations": "Notes",
+      "hg_hazardcase_AsyncOperations": "System Jobs",
+      "hg_hazardcase_BulkDeleteFailures": "Bulk Delete Failures",
+      "hg_hazardcase_inspection": "Inspections",
+      "hg_hazardcase_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hg_hazardcase_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hg_hazardcase_ProcessSession": "Process Sessions",
+      "hg_hazardcase_repairjob": "Repair Jobs",
+      "hg_hazardcase_SyncErrors": "Sync Errors",
+      "hg_hazardcaseid": "Hazard Case",
+      "hg_hazardtype": "Hazard Type",
+      "hg_investigationdeadline": "Investigation Deadline",
+      "hg_name": "Case Reference",
+      "hg_PropertyId": "Property",
+      "hg_repairdeadline": "Repair Deadline",
+      "hg_reporteddate": "Reported Date",
+      "hg_ResidentId": "Resident",
+      "hg_severity": "Severity",
+      "hg_slastatus": "SLA Status",
+      "hg_status": "Status (hg_status)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status (statecode)",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Hazard Cases",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Hazard Cases (Views)",
+    "Name": "_hg_hazardcase_views",
+    "RelatedEntityName": "Hazard Cases",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "023a0f19-37db-4b77-9523-372e2a3ddd84": "Hazard Case Advanced Find View",
+      "48925584-bbcf-4034-ad0f-0c5994af8ad1": "Inactive Hazard Cases",
+      "9f2f8f13-3f5c-48a4-ac2a-f5cca71ca573": "Hazard Case Associated View",
+      "dcdb000b-b3f6-42c6-881f-33b61bfa609e": "Hazard Case Lookup View",
+      "f3acb3f5-29c8-4b9c-a9ed-cbcf3c52f781": "Active Hazard Cases"
+    }
+  },
+  {
+    "DisplayName": "Hazard Type (Hazard Cases)",
+    "Name": "cr86e_hg_hazardcase_hg_hazardtype",
+    "OptionSetInfoNameMapping": {
+      "1": "Damp",
+      "2": "Mould",
+      "3": "Damp & Mould",
+      "4": "Condensation",
+      "5": "Structural"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hg_hazardtype",
+        "OptionSetReferenceEntityName": "Hazard Cases"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hg_hazardtype",
+    "RelatedEntityName": "Hazard Cases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Severity (Hazard Cases)",
+    "Name": "cr86e_hg_hazardcase_hg_severity",
+    "OptionSetInfoNameMapping": {
+      "1": "Emergency (24hr)",
+      "2": "Significant",
+      "3": "Moderate",
+      "4": "Minor"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hg_severity",
+        "OptionSetReferenceEntityName": "Hazard Cases"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hg_severity",
+    "RelatedEntityName": "Hazard Cases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SLA Status (Hazard Cases)",
+    "Name": "cr86e_hg_hazardcase_hg_slastatus",
+    "OptionSetInfoNameMapping": {
+      "1": "On Track",
+      "2": "At Risk",
+      "3": "Breached"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hg_slastatus",
+        "OptionSetReferenceEntityName": "Hazard Cases"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hg_slastatus",
+    "RelatedEntityName": "Hazard Cases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Hazard Cases)",
+    "Name": "cr86e_hg_hazardcase_hg_status",
+    "OptionSetInfoNameMapping": {
+      "1": "New",
+      "2": "Triaged",
+      "3": "Investigation Booked",
+      "4": "Investigated",
+      "5": "Repair Scheduled",
+      "6": "In Progress",
+      "7": "Resolved",
+      "8": "Closed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hg_status",
+        "OptionSetReferenceEntityName": "Hazard Cases"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hg_status",
+    "RelatedEntityName": "Hazard Cases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Hazard Cases)_1",
+    "Name": "hg_hazardcase_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Hazard Cases"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Hazard Cases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Hazard Cases)",
+    "Name": "hg_hazardcase_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Hazard Cases"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Hazard Cases",
+    "Type": "OptionSetInfo"
+  }
+]

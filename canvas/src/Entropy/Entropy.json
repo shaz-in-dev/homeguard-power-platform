@@ -1,0 +1,69 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Host": 3,
+    "scrReport": 5,
+    "scrThanks": 6,
+    "scrWelcome": 4
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "07/04/2026 09:23:46",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "Hazard Cases": 15,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_hazardtype": 0,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_severity": 1,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_slastatus": 2,
+    "Hazard Cases\\cr86e_hg_hazardcase_hg_status": 3,
+    "Hazard Cases\\default.cds_hg_hazardcase_views": 12,
+    "Hazard Cases\\hg_hazardcase_statecode": 4,
+    "Hazard Cases\\hg_hazardcase_statuscode": 5,
+    "Properties": 16,
+    "Properties\\cr86e_hg_property_hg_propertytype": 6,
+    "Properties\\default.cds_hg_property_views": 13,
+    "Properties\\hg_property_statecode": 7,
+    "Properties\\hg_property_statuscode": 8,
+    "Residents": 17,
+    "Residents\\cr86e_hg_resident_hg_isvulnerable": 9,
+    "Residents\\default.cds_hg_resident_views": 14,
+    "Residents\\hg_resident_statecode": 10,
+    "Residents\\hg_resident_statuscode": 11
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Host": {},
+    "scrReport": {},
+    "scrThanks": {},
+    "scrWelcome": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Host": 0,
+    "scrReport": 0,
+    "scrThanks": 0,
+    "scrWelcome": 0
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1028597,
+    "ControlCount": {}
+  },
+  "WasLocalDatabaseReferencesEmpty": false
+}

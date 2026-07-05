@@ -1,0 +1,124 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hg_properties",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hg_property",
+    "Name": "Properties",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hg_addressline1": "Address Line 1",
+      "hg_bedrooms": "Bedrooms",
+      "hg_name": "Property Reference",
+      "hg_postcode": "Postcode",
+      "hg_property_Annotations": "Notes",
+      "hg_property_AsyncOperations": "System Jobs",
+      "hg_property_BulkDeleteFailures": "Bulk Delete Failures",
+      "hg_property_hazardcase": "Hazard Cases",
+      "hg_property_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hg_property_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hg_property_ProcessSession": "Process Sessions",
+      "hg_property_resident": "Residents",
+      "hg_property_SyncErrors": "Sync Errors",
+      "hg_propertyid": "Property",
+      "hg_propertytype": "Property Type",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Properties",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Properties (Views)",
+    "Name": "_hg_property_views",
+    "RelatedEntityName": "Properties",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1f9cef57-3f01-4541-b7c5-6d9ab3b5f923": "Property Advanced Find View",
+      "6157fc42-c847-4590-874a-09b6c528f2e7": "Active Properties",
+      "6753d73f-e5cf-4481-b1e0-0dbe4aac81df": "Inactive Properties",
+      "7c72d800-c551-4790-bbc4-d00e3c80d9d7": "Property Associated View",
+      "d9a67ae4-eb44-47a5-b579-1296d6adcd0f": "Property Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Property Type (Properties)",
+    "Name": "cr86e_hg_property_hg_propertytype",
+    "OptionSetInfoNameMapping": {
+      "1": "House",
+      "2": "Flat",
+      "3": "Bungalow",
+      "4": "Maisonette"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hg_propertytype",
+        "OptionSetReferenceEntityName": "Properties"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hg_propertytype",
+    "RelatedEntityName": "Properties",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Properties)",
+    "Name": "hg_property_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Properties"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Properties",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Properties)",
+    "Name": "hg_property_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Properties"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Properties",
+    "Type": "OptionSetInfo"
+  }
+]
