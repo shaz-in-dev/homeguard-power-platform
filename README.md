@@ -16,6 +16,34 @@ Residents report a hazard → officers triage it → the statutory deadlines are
 | **HomeGuard Compliance** | Model-driven app | Housing officers | Enterprise case management — sectioned forms, curated views |
 | **HomeGuard portal** | Power Pages | Public / residents | Public website: Awaab's Law info + a report form that saves to Dataverse |
 
+## Screenshots
+
+### Resident app — "Report a Hazard"
+
+| Welcome | Report form | Confirmation |
+|---|---|---|
+| ![Welcome screen](docs/images/resident-welcome.png) | ![Report form](docs/images/resident-form.png) | ![Confirmation](docs/images/resident-confirmation.png) |
+
+### Officer app — "HomeGuard Officer"
+
+Colour-coded SLA case list — breached cases and emergencies flagged in red:
+
+![Officer case list](docs/images/officer-case-list.png)
+
+Case detail with the Awaab's Law triage panel:
+
+![Officer case detail](docs/images/officer-case-detail.png)
+
+### Model-driven app — "HomeGuard Compliance"
+
+![Model-driven hazard cases](docs/images/modeldriven-cases.png)
+
+### Power Pages portal (public)
+
+![Portal landing page](docs/images/portal-landing.png)
+
+![Portal report form](docs/images/portal-form.png)
+
 ## Data model
 
 ```
